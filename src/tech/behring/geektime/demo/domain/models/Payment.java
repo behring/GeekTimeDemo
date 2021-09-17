@@ -6,4 +6,6 @@ package tech.behring.geektime.demo.domain.models;
  * @author Behring.Zhao
  **/
 public final class Payment {
+    public Payment(long price) {
+    }
 }

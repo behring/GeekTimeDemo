@@ -8,6 +8,8 @@ package tech.behring.geektime.demo.domain.models;
 public interface OrderContext {
     interface Buyer {
         void placeOrder(Column column);
+
+        void pay(Order order);
     }
 
     Buyer asBuyer(User user);

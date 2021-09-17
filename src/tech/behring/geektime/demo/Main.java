@@ -13,6 +13,8 @@ public class Main {
         UserRepository users = new UserRepositoryDB(DataBase.getInstance());
         User user = users.findUserById(1);
         Buyer buyer = users.inOrderContext().asBuyer(user);
+        buyer.placeOrder(new Column());
+
         Reader reader = users.inSubscriptionContext().asReader(user);
         Contact contact = users.inSocialContext().asContact(user);
     }

@@ -1,5 +1,6 @@
 package tech.behring.geektime.demo.domain.impl.db;
 
+import tech.behring.geektime.demo.domain.impl.db.dao.OrderDao;
 import tech.behring.geektime.demo.domain.impl.db.dao.SubscriptionDao;
 import tech.behring.geektime.demo.domain.impl.db.dao.UserDao;
 
@@ -20,6 +21,10 @@ public final class DataBase {
 
     public UserDao getUserDao() {
         return new UserDao();
+    }
+
+    public OrderDao getOrderDao() {
+        return new OrderDao();
     }
 
     public SubscriptionDao getSubscriptionDao() {
